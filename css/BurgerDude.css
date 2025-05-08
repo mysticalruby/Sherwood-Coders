@@ -1,0 +1,29 @@
+body{
+    background-color: #000000;
+    color: #57A7F5;
+    font-family: "Coral Pixels";
+}
+
+h1, h2{
+    color: #4F42D5;
+}
+
+section{
+    background-color: #10275B;
+    border: 2px solid #181FAD;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+img{
+    border: 3px solid #3F4880;
+    border-radius: 8px;
+    margin: 0.5rem;
+}
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+  }

@@ -1,0 +1,146 @@
+body {
+    background-color: #FFFFFF;
+    color: #36374B;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #000CF5;
+    color: #FFFFFF;
+    padding: 1rem;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000CF5;
+    padding: 1rem;
+    color: white;
+  }
+  
+  nav img {
+    height: 50px;
+  }
+  
+  .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #C2A842;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .dropdown-content li {
+    list-style: none;
+  }
+  
+  .dropdown-content li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #F5C70F;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Gallery */
+  .programmer-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #F5C70F;
+    border-radius: 8px;
+  }
+
+  .programmers-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .programmer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #000CF5;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 150px;
+    box-shadow: 0 6px 8px rgba(194, 170, 12, 0.311);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card h3 {
+    margin: 0.5rem 0 0.3rem;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #FFFFFF;
+  }
