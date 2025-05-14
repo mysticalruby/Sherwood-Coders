@@ -1,23 +1,24 @@
 body{
-    background-color: #000000;
-    color: #57A7F5;
+    background-color: #FFFFFF;
+    color: #000000;
     font-family: "Corrier";
 }
 
 h1, h2{
-    color: #4F42D5;
+    color: #000000;
+    font-size: 4rem;
 }
 
 section{
-    background-color: #10275B;
-    border: 2px solid #181FAD;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
     padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 10px;
 }
 
 img{
-    border: 3px solid #3F4880;
+    border: 3px solid #000000;
     border-radius: 8px;
     margin: 0.5rem;
 }
