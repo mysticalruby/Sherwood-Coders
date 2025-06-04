@@ -4,21 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
      setTimeout(() => loader.classList.add('hide'), 500);
    }
 
-   const beanFacts = [
-     'Kidney beans were first domesticated in Peru.',
-     'Coffee beans are actually seeds from berries.',
-     'There are over 40,000 varieties of beans.',
-     'Baked beans are a staple of British breakfasts.',
-     'Vanilla beans come from orchids.'
-   ];
-   const beanBtn = document.getElementById('beanBtn');
-   const beanOutput = document.getElementById('beanOutput');
-   if (beanBtn && beanOutput) {
-     beanBtn.addEventListener('click', () => {
-       const fact = beanFacts[Math.floor(Math.random() * beanFacts.length)];
-       beanOutput.textContent = fact;
-     });
-   }
+  const codingFacts = [
+    'The first computer bug was an actual moth found in a Harvard Mark II computer.',
+    'The first programmer was Ada Lovelace in the 19th century.',
+    'JavaScript was created in just 10 days.',
+    'The first computer game is generally recognized as Spacewar!, developed in 1962.',
+    'Python is named after the comedy group Monty Python.'
+  ];
+  const codeBtn = document.getElementById('codeBtn');
+  const codeOutput = document.getElementById('codeOutput');
+  if (codeBtn && codeOutput) {
+    codeBtn.addEventListener('click', () => {
+      const fact = codingFacts[Math.floor(Math.random() * codingFacts.length)];
+      codeOutput.textContent = fact;
+    });
+  }
 
    const playground = document.getElementById('playground');
    const colorInput = document.getElementById('playground-color');
