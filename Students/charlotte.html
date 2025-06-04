@@ -1,12 +1,89 @@
-<div id="score-panel">
-	<ul class="stars">
-		<li><i class="fa fa-star"></i></li>
-		<li><i class="fa fa-star"></i></li>
-		<li><i class="fa fa-star"></i></li>
-	</ul>
-	<span class="moves">0</span> Moves
-	<div class="restart">
-		<i class="fa fa-repeat"></i>
-	</div>
-</div>
-<ul class="deck"></ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Games</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 0 20px;
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px 40px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .set {
+      text-align: center;
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .set img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .set a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #3366cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .set a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Games</h1>
+
+  <div class="grid-container">
+    <div class="set">
+      <img src="../images/logo.jpg" alt="Crossy Road">
+      <a href="https://codepen.io/HunorMarton/full/JwWLJo" target="_blank">Crossy Road</a>
+    </div>
+    <div class="set">
+      <img src="../images/logo.jpg" alt="Tower Stack">
+      <a href="https://codepen.io/ste-vg/full/ppLQNW" target="_blank">Tower Stack</a>
+    </div>
+    <div class="set">
+      <img src="../images/logo.jpg" alt="Chess">
+      <a href="https://codepen.io/juliangarnier/full/kxGRvV" target="_blank">Chess</a>
+    </div>
+    <div class="set">
+      <img src="../images/logo.jpg" alt="Rubix Cube">
+      <a href="https://codepen.io/bsehovac/full/EMyWVv" target="_blank">Rubix Cube</a>
+    </div>
+    <div class="set">
+      <img src="../images/logo.jpg" alt="Hangman">
+      <a href="https://codepen.io/cathydutton/full/JjpxMm" target="_blank">Hangman</a>
+    </div>
+    <div class="set">
+      <img src="../images/logo.jpg" alt="Ronit Website">
+      <a href="https://gras2027.vercel.app" target="_blank">Ronit's Website</a>
+    </div>
+  </div>
+
+</body>
+</html>
