@@ -29,9 +29,38 @@
        playground.style.fontFamily = fontSelect.value;
      }
    }
-   if (colorInput && fontSelect) {
-     colorInput.addEventListener('input', updatePlayground);
-     fontSelect.addEventListener('change', updatePlayground);
-     updatePlayground();
-   }
- });
+  if (colorInput && fontSelect) {
+    colorInput.addEventListener('input', updatePlayground);
+    fontSelect.addEventListener('change', updatePlayground);
+    updatePlayground();
+  }
+
+  const slides = document.querySelectorAll('.programmer-slide');
+  const randomLinks = [
+    'https://example.com',
+    'https://www.wikipedia.org',
+    'https://www.mozilla.org',
+    'https://github.com',
+    'https://openai.com'
+  ];
+  const linkElements = document.querySelectorAll('.random-link');
+  linkElements.forEach(el => {
+    const url = randomLinks[Math.floor(Math.random() * randomLinks.length)];
+    el.href = url;
+    el.textContent = url;
+  });
+
+  let slideIndex = 0;
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+  if (slides.length) {
+    showSlide(slideIndex);
+    setInterval(() => {
+      slideIndex = (slideIndex + 1) % slides.length;
+      showSlide(slideIndex);
+    }, 10000);
+  }
+});
