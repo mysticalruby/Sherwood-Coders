@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sherwood Builders</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <div class="loader">Loading...</div>
 
   <header>
     <nav class="navbar">
@@ -46,8 +50,34 @@
   </header>
 
   <main>
-    <section>
+    <section class="fade-in">
       <p>Welcome to our site dedicated to the chaos of creativity, coding, and BEAN.</p>
+    </section>
+
+    <section class="what-we-do fade-in">
+      <h2>What We Do</h2>
+      <p>We learn the basics of coding, build random websites, break stuff (and fix it!), and love messing with HTML to see what happens.</p>
+    </section>
+
+    <section class="bean-section fade-in">
+      <h2>Bean of the Day</h2>
+      <button id="beanBtn">Show me a bean fact!</button>
+      <p id="beanOutput"></p>
+    </section>
+
+    <section class="css-playground fade-in">
+      <h2>CSS Playground</h2>
+      <p>Experiment with colors and fonts in real time.</p>
+      <label>Text color: <input type="color" id="playground-color" value="#000CF5"></label>
+      <label>Font:
+        <select id="playground-font">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+      </label>
+      <div id="playground" class="play-box">Live preview</div>
     </section>
 
     <section class="programmers-section">
@@ -58,7 +88,7 @@
           <img src="../images/Burger2.png" alt="BurgerDude">
           <h3>Burger Dude</h3>
           <p>Burger Dude is a cool kid that likes food and nerdy stuff. His favorite Foods include burgers, burgers, and especially burgers with fries! In his free time you might find him reading a book or writing the next Weekly Nerd article. But most likely he's eating a burger. </p>
-        </div>/
+        </div>
     
         <div class="card">
           <img src="../images/shreyas.jpg" alt="Shreyas">
@@ -95,5 +125,11 @@
 
   </main>
 
+  <footer class="footer">
+    <p>Contact us at <a href="mailto:contact@sherwoodcoders.example">contact@sherwoodcoders.example</a></p>
+    <p>&copy; 2024 Sherwood Coders. Site by the students.</p>
+  </footer>
+
+  <script src="javascript/main.js"></script>
 </body>
 </html>
